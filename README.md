@@ -1,4 +1,4 @@
-# 📜 Cheat Sheet de Bash para Bandit (OverTheWire) — Español
+# 📜 Cheat Sheet de Bash
 
 ---
 

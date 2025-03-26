@@ -1,96 +1,91 @@
-# 📜 Bash Cheat Sheet para Bandit (OverTheWire) — Bilingüe (Español / English)
+# 📜 Cheat Sheet de Bash para Bandit (OverTheWire) — Español
 
 ---
 
-## 📁 Navegación de Archivos / File Navigation
+## 📁 Navegación de Archivos
 
-| Comando | Descripción (ES) | Description (EN) | Parámetros comunes | Significado |
-|--------|-------------------|------------------|----------------------|-------------|
-| `ls` | Lista archivos y carpetas | List files and folders | `-l`, `-a`, `-h` | `-l`: largo / long, `-a`: ocultos / all, `-h`: legible / human-readable |
-| `cd` | Cambia de directorio | Change directory | `..`, `~`, `-` | `..`: subir / up, `~`: home, `-`: anterior / previous |
-| `pwd` | Muestra ruta actual | Show current path | — | — |
-| `mkdir` | Crea carpetas | Create folders | `-p`, `-v` | `-p`: crea rutas / make paths, `-v`: salida / verbose |
-| `touch` | Crea archivo vacío | Create empty file | — | — |
-| `rm` | Elimina archivos | Delete files | `-r`, `-f`, `-v` | `-r`: recursivo, `-f`: forzar / force, `-v`: verboso |
-| `cp` | Copia archivos | Copy files | `-r`, `-v`, `-i` | `-i`: confirma / confirm, `-r`: recursivo, `-v`: verbose |
-| `mv` | Mueve o renombra archivos | Move or rename files | `-i`, `-v` | `-i`: confirmar, `-v`: progreso / progress |
-
----
-
-## 📂 Información del Sistema / System Info
-
-| Comando | Descripción (ES) | Description (EN) | Parámetros comunes | Significado |
-|--------|-------------------|------------------|----------------------|-------------|
-| `whoami` | Usuario actual | Current user | — | — |
-| `id` | Info de usuario y grupos | User and group info | — | — |
-| `uname` | Info del sistema | System info | `-a` | `-a`: todo / all |
-| `stat` | Info de archivo | File info | — | — |
-| `lsattr` | Atributos extendidos | Extended attributes | — | — |
+| Comando | Descripción | Parámetros comunes | Significado |
+|--------|-------------|--------------------|-------------|
+| `ls` | Lista archivos y carpetas | `-l`, `-a`, `-h` | `-l`: largo, `-a`: ocultos, `-h`: tamaño legible |
+| `cd` | Cambia de directorio | `..`, `~`, `-` | `..`: subir, `~`: home, `-`: anterior |
+| `pwd` | Muestra ruta actual | — | — |
+| `mkdir` | Crea carpetas | `-p`, `-v` | `-p`: crea rutas, `-v`: salida verbose |
+| `touch` | Crea archivo vacío | — | — |
+| `rm` | Elimina archivos | `-r`, `-f`, `-v` | `-r`: recursivo, `-f`: forzar, `-v`: verbose |
+| `cp` | Copia archivos | `-r`, `-v`, `-i` | `-i`: confirmar, `-r`: recursivo, `-v`: verbose |
+| `mv` | Mueve o renombra archivos | `-i`, `-v` | `-i`: confirmar, `-v`: progreso |
 
 ---
 
-## 📑 Visualización de Archivos / Viewing Files
+## 📂 Información del Sistema
 
-| Comando | Descripción (ES) | Description (EN) | Parámetros comunes | Significado |
-|--------|-------------------|------------------|----------------------|-------------|
-| `cat` | Muestra contenido | Show content | `-n`, `-A` | `-n`: numera, `-A`: muestra todo |
-| `head` | Primeras líneas | First lines | `-n` | `-n`: cuántas líneas |
-| `tail` | Últimas líneas | Last lines | `-n` | `-n`: cuántas líneas |
-| `echo` | Imprime texto | Print text | `-n`, `-e` | `-n`: sin salto / no newline, `-e`: interpreta / interpret escapes |
-| `file` | Tipo de archivo | File type | — | — |
-| `strings` | Extrae texto legible | Extract readable strings | — | — |
-
----
-
-## 🔍 Búsqueda y Filtros / Search & Filters
-
-| Comando | Descripción (ES) | Description (EN) | Parámetros comunes | Significado |
-|--------|-------------------|------------------|----------------------|-------------|
-| `grep` | Busca texto | Search text | `-i`, `-r`, `-n` | `-i`: sin mayúsculas, `-r`: recursivo, `-n`: número línea |
-| `find` | Busca archivos | Find files | `-name`, `-type`, `-exec` | Por nombre, tipo o ejecución |
-| `cut` | Corta columnas | Cut columns | `-d`, `-f` | `-d`: delimitador, `-f`: campo |
-| `sort` | Ordena líneas | Sort lines | `-r`, `-u` | `-r`: reverso, `-u`: únicos |
-| `uniq` | Elimina duplicados | Remove duplicates | `-c` | `-c`: cuenta repeticiones |
-| `diff` | Compara archivos | Compare files | — | — |
+| Comando | Descripción | Parámetros comunes | Significado |
+|--------|-------------|--------------------|-------------|
+| `whoami` | Usuario actual | — | — |
+| `id` | Información de usuario y grupos | — | — |
+| `uname` | Información del sistema | `-a` | `-a`: toda la información |
+| `stat` | Información de archivo | — | — |
+| `lsattr` | Atributos extendidos | — | — |
 
 ---
 
-## 📦 Compresión / Compression
+## 📑 Visualización de Archivos
 
-| Comando | Descripción (ES) | Description (EN) | Parámetros comunes | Significado |
-|--------|-------------------|------------------|----------------------|-------------|
-| `tar` | Empaqueta archivos | Package files | `-xvf`, `-cvf` | `-xvf`: extraer, `-cvf`: crear |
-| `gzip/gunzip` | Comprime/Descomprime gzip | Compress/decompress gzip | — | — |
-| `bzip2/bunzip2` | Comprime/Descomprime bzip2 | Compress/decompress bzip2 | — | — |
-| `xz/unxz` | Comprime/Descomprime xz | Compress/decompress xz | — | — |
-| `base64` | Codifica/decodifica | Encode/decode | `-d` | `-d`: decodificar |
-| `xxd` | Hexdump / revertir | Hexdump / revert | `-r` | `-r`: revertir a binario |
+| Comando | Descripción | Parámetros comunes | Significado |
+|--------|-------------|--------------------|-------------|
+| `cat` | Muestra contenido | `-n`, `-A` | `-n`: numera líneas, `-A`: muestra caracteres especiales |
+| `head` | Primeras líneas | `-n` | `-n`: cuántas líneas mostrar |
+| `tail` | Últimas líneas | `-n` | `-n`: cuántas líneas mostrar |
+| `echo` | Imprime texto | `-n`, `-e` | `-n`: sin salto de línea, `-e`: interpreta caracteres especiales |
+| `file` | Tipo de archivo | — | — |
+| `strings` | Extrae texto legible de binarios | — | — |
 
 ---
 
-## 🌐 Red y Conexiones / Networking
+## 🔍 Búsqueda y Filtros
 
-| Comando | Descripción (ES) | Description (EN) | Parámetros comunes | Significado |
-|--------|-------------------|------------------|----------------------|-------------|
-| `ssh` | Conecta por SSH | SSH connect | `-p` | Puerto / port |
-| `scp` | Copia entre máquinas | Copy between machines | `-P`, `-r` | `-P`: puerto, `-r`: recursivo |
-| `nc` | Cliente TCP/UDP | TCP/UDP client | `-l`, `-p` | Escucha, puerto |
-| `telnet` | Conexión TCP simple | Simple TCP connect | — | — |
-| `wget` | Descarga web | Download from web | `-q`, `-O` | `-q`: silencioso, `-O`: salida |
-| `curl` | Cliente HTTP | HTTP client | `-s`, `-o` | `-s`: silencioso, `-o`: salida |
+| Comando | Descripción | Parámetros comunes | Significado |
+|--------|-------------|--------------------|-------------|
+| `grep` | Busca texto en archivos | `-i`, `-r`, `-n` | `-i`: ignora mayúsculas, `-r`: recursivo, `-n`: muestra número de línea |
+| `find` | Busca archivos | `-name`, `-type`, `-exec` | Por nombre, tipo o ejecución de comandos |
+| `cut` | Corta columnas de texto | `-d`, `-f` | `-d`: delimitador, `-f`: campo |
+| `sort` | Ordena líneas | `-r`, `-u` | `-r`: reverso, `-u`: únicos |
+| `uniq` | Elimina duplicados | `-c` | `-c`: cuenta repeticiones |
+| `diff` | Compara archivos | — | — |
+
+---
+
+## 📦 Compresión
+
+| Comando | Descripción | Parámetros comunes | Significado |
+|--------|-------------|--------------------|-------------|
+| `tar` | Empaqueta o desempaqueta archivos | `-xvf`, `-cvf` | `-xvf`: extraer, `-cvf`: crear |
+| `gzip/gunzip` | Comprime/Descomprime con gzip | — | — |
+| `bzip2/bunzip2` | Comprime/Descomprime con bzip2 | — | — |
+| `xz/unxz` | Comprime/Descomprime con xz | — | — |
+| `base64` | Codifica o decodifica en base64 | `-d` | `-d`: decodificar |
+| `xxd` | Hexdump o revertir a binario | `-r` | `-r`: revertir |
+
+---
+
+## 🌐 Red y Conexiones
+
+| Comando | Descripción | Parámetros comunes | Significado |
+|--------|-------------|--------------------|-------------|
+| `ssh` | Conecta por SSH | `-p` | `-p`: puerto |
+| `scp` | Copia entre máquinas | `-P`, `-r` | `-P`: puerto, `-r`: recursivo |
+| `nc` | Cliente TCP/UDP (Netcat) | `-l`, `-p` | `-l`: escucha, `-p`: puerto |
+| `telnet` | Conexión TCP simple | — | — |
+| `wget` | Descarga archivos de la web | `-q`, `-O` | `-q`: silencioso, `-O`: archivo de salida |
+| `curl` | Transferencia por HTTP | `-s`, `-o` | `-s`: silencioso, `-o`: archivo de salida |
 
 ---
 
 ## 🛠 Otros
 
-| Comando | Descripción (ES) | Description (EN) | Parámetros comunes | Significado |
-|--------|-------------------|------------------|----------------------|-------------|
-| `read` | Lee entrada | Read input | — | — |
-| `man` | Manual de comandos | Command manual | — | — |
+| Comando | Descripción | Parámetros comunes | Significado |
+|--------|-------------|--------------------|-------------|
+| `read` | Lee entrada desde teclado | — | — |
+| `man` | Manual de comandos | — | — |
 
 ---
-
-> ✅ Esta hoja es ideal para resolver todos los niveles de Bandit (OverTheWire). Puedes copiarla, guardarla, o exportarla para tenerla siempre a mano.
-
----
-

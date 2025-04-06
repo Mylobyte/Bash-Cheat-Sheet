@@ -50,7 +50,7 @@
 | `find` | Busca archivos | `-name`, `-type`, `-exec` | Por nombre, tipo o ejecución de comandos |
 | `cut` | Corta columnas de texto | `-d`, `-f` | `-d`: delimitador, `-f`: campo |
 | `sort` | Ordena líneas | `-r`, `-u` | `-r`: reverso, `-u`: únicos |
-| `uniq` | Elimina duplicados | `-c` | `-c`: cuenta repeticiones |
+| `uniq` | Elimina duplicados | `-c`, `-u` | `-c`: cuenta repeticiones, `-u`: muestra las líneas únicas |
 | `diff` | Compara archivos | — | — |
 
 ---
